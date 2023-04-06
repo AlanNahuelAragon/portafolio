@@ -5,6 +5,7 @@ import LogoButton from './LogoButton';
 
 function Sidebar() {
     return <div className='Sidebar'>
+        <div className='SidebarContainer'>
         <LogoButton/>
         <ul className='SidebarList'>
 
@@ -24,6 +25,8 @@ function Sidebar() {
                 </li>
             })}
         </ul>
+        </div>
+        
     </div>
 }
 
