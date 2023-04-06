@@ -16,9 +16,15 @@
   margin-top: 7vh;
   text-align: center;
   margin-bottom: 7vh;
+  
+}
+.title-gradient{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 5vh;
   font-weight: 700;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .MiniContainer {
@@ -100,7 +106,7 @@ body {
 }
 
 .Home {
-  background-color: blue;
+  background-color: beige;
   height: 100vh;
 
 }
@@ -109,22 +115,136 @@ body {
   display: block;
   height: 55%;
   margin-bottom: 11vh;
+
 }
 .top-bar {
   display: flex;
+  flex-direction: row-reverse;
   width: 100%;
-  background-color: red;
+  border: #242528;
+  border-style: solid;
+  background-color: #242528;
+  height: 20px;
+}
+.circles{
+  display: flex;
+  float: right;
+
+}
+.dot-yellow {
+  content: '';
+  background: yellow;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 20px;
+  top: 20px;
+  margin-left: 5px;
+}
+.dot-green {
+  content: '';
+  background: greenyellow;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 20px;
+  top: 20px;
+  margin-left: 5px;
+}
+.dot-red {
+  content: '';
+  background: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 20px;
+  top: 20px;
+  margin-left: 5px;
 }
 .center {
   display: flex;
-  background-color: greenyellow;
   height: 100%;
+  border: #000000;
+  border-style: solid;
+  width: 100%;
+  box-shadow: 0 0 20px #000000;
 }
 .sidebar {
   display: block;
   height: 100%;
-  width: 70%;
-  background-color: aqua;
+  width: 30%;
+
+
+
+background-color: #242528;
+}
+.chat-container{
+  display: block;
+  width: 100%;
+  background: radial-gradient(circle, rgba(195,34,189,1) 0%, rgba(45,63,253,1) 100%);
+}
+.text-zone-left{
+  padding-top: 5%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.text-spike-left {
+  content: "";
+  width: 0px;
+  height: 0px;
+  margin-top: 27%;
+  position: relative;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #53a2fd;
+  border-top: 10px solid #53a2fd;
+  border-bottom: 10px solid transparent;
+  margin-left: 2%;
+  top: 6px;
+}
+.text-bubble-left{
+
+  margin-top: 10%;
+  height: 70%;
+  background: #53a2fd;
+  width: 60%;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.text-zone-right{
+  padding-top: 0%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.text-spike-right {
+  content: "";
+  width: 0px;
+  height: 0px;
+  margin-top: 10%;
+  position: relative;
+  border-left: 10px solid yellowgreen;
+  border-right: 10px solid transparent;
+  border-top: 10px solid yellowgreen;
+  border-bottom: 10px solid transparent;
+  margin-left: 0%;
+
+  
+}
+.text-bubble-right{
+  margin-top: 10%;
+  height: 30%;
+  background: yellowgreen;
+  width: 60%;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
 }
 
 
@@ -164,7 +284,7 @@ body {
 
 
 .Skills {
-  background-color: greenyellow;
+  background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(236,255,0,1) 100%);
   height: 100vh;
 }
 .SkillsContainer {
@@ -206,7 +326,7 @@ body {
 
 
 .Contact {
-  background-color: yellow;
+  background-color: beige;
   height: 100vh;
 }
 .ContactContainer {
@@ -330,9 +450,8 @@ body {
   opacity: .24;
 }
 
-/*Boton Nave*/
+/*Contact Button*/
 
-/* CSS */
 .button-spaceship-pushable {
   position: relative;
   border: none;
@@ -434,4 +553,49 @@ body {
 
 .button-spaceship-pushable:focus:not(:focus-visible) {
   outline: none;
+}
+
+
+/*Home Animation*/
+.description-animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.description-animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color:#20d873;
+}
+.second div {
+  background-color:#CD921E;
+}
+.third div {
+  background-color:#c10528;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
 }

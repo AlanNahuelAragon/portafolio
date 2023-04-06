@@ -3,7 +3,9 @@ import '../App.css';
 import { SidebarData } from './SidebarData'
 import LogoButton from './LogoButton';
 
-function Sidebar() {
+
+
+function Sidebar({handleClick}) {
     return <div className='Sidebar'>
         <div className='SidebarContainer'>
         <LogoButton/>
@@ -14,8 +16,8 @@ function Sidebar() {
                     key={key}
                     className='row'
                     id={window.location.pathname === val.link ? 'active' : ''}
-                    onClick={
-                        () => { window.location.pathname = val.link }}>{" "}
+                    onClick={() => handleClick(val.link)}
+                    >
                     <div id='icon'>
                         {val.icon}
                     </div>{" "}

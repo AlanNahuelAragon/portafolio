@@ -9,10 +9,12 @@ function Contact() {
       .catch(error => console.log(error))
   }
   return (
-    <div className='Contact'>
+    <div id='contact' className='Contact'>
       <div className='MiniContainer'>
         <div className='SectionTitle'>
-          {"<CONTACT>"}
+          <h1 className='title-gradient'>
+            {"<Contact>"}
+          </h1>
         </div>
         <div className='ContactContainer'>
           <div className='div-form'>
@@ -43,7 +45,9 @@ function Contact() {
 
         </div>
         <div className='SectionTitle'>
-          {"</CONTACT>"}
+          <h1 className='title-gradient'>
+            {"</Contact>"}
+          </h1>
         </div>
       </div>
     </div>

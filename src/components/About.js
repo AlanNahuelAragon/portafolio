@@ -2,10 +2,12 @@ import React from 'react'
 
 function About() {
     return (
-        <div className='About'>
+        <div id='about' className='About'>
             <div className='MiniContainer'>
                 <div className='SectionTitle'>
-                    {"<ABOUT>"}
+                    <h1 className='title-gradient'>
+                        {"<About>"}
+                    </h1>
                 </div>
                 <div className='AboutContainer'>
                     <div className='card'>
@@ -28,13 +30,15 @@ function About() {
                                 standard dummy text ever since the 1500s, when an unknown printer
                                 took a galley of type and scrambled it to make "
                             </div>
-                            
+
                         </div>
 
                     </div>
                 </div>
                 <div className='SectionTitle'>
-                    {"</ABOUT>"}
+                    <h1 className='title-gradient'>
+                        {"<About/>"}
+                    </h1>
                 </div>
             </div>
         </div>

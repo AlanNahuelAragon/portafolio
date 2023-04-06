@@ -6,14 +6,16 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 function Skills() {
 
   return (
-    <div className='Skills'>
+    <div id='skills' className='Skills'>
       <div className='MiniContainer'>
         <div className='SectionTitle'>
-          {"<SKILLS>"}
+          <h1 className='title-gradient'>
+            {"<Skills>"}
+          </h1>
         </div>
         <div className='SkillsContainer'>
           <div className='skill-blocks'>
-            <p className='skill-tittle'>Languages <CodeIcon/></p>
+            <p className='skill-tittle'>Languages <CodeIcon /></p>
             <div className='skill-buttons-container'>
               <button className='button-gradient' type='button' >JavaScript</button>
               <button className='button-gradient' type='button' >CSS</button>
@@ -23,7 +25,7 @@ function Skills() {
             </div>
           </div>
           <div className='skill-blocks'>
-            <p className='skill-tittle'>Tech <DashboardIcon/></p>
+            <p className='skill-tittle'>Tech <DashboardIcon /></p>
             <div className='skill-buttons-container'>
               <button className='button-gradient' type='button' >React</button>
               <button className='button-gradient' type='button' >Angular</button>
@@ -33,7 +35,7 @@ function Skills() {
             </div>
           </div>
           <div className='skill-blocks'>
-            <p className='skill-tittle'>Others <ComputerIcon/></p>
+            <p className='skill-tittle'>Others <ComputerIcon /></p>
             <div className='skill-buttons-container'>
               <button className='button-gradient' type='button' >Unity3D</button>
               <button className='button-gradient' type='button' >Excel</button>
@@ -44,7 +46,9 @@ function Skills() {
           </div>
         </div>
         <div className='SectionTitle'>
-          {"</SKILLS>"}
+          <h1 className='title-gradient'>
+            {"</Skills>"}
+          </h1>
         </div>
       </div>
     </div>

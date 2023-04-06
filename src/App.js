@@ -4,22 +4,28 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
-
 import '@fontsource/roboto'
-let Theme = "";
+import { useState } from 'react';
+
 
 function App() {
+  const [currentComponent, setCurrentComponent] = useState('home');
+
+  const handleClick = (component) => {
+    setCurrentComponent(component);
+  };
+
   return (
     <div className="App">
-      <Sidebar/>
+      <Sidebar handleClick={handleClick} />
       <div className='Container'>
-        <Home/>
-        <About/>
-        <Skills/>
-        <Portfolio/>
-        <Contact/>
+        {currentComponent === 'home' && <Home />}
+        {currentComponent === 'about' && <About />}
+        {currentComponent === 'skills' && <Skills />}
+        {currentComponent === 'portfolio' && <Portfolio />}
+        {currentComponent === 'contact' && <Contact />}
+
       </div>
-      
     </div>
   );
 }

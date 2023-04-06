@@ -2,16 +2,20 @@ import React from 'react'
 
 function Portfolio() {
   return (
-    <div className='Portfolio'>
-              <div className='MiniContainer'>
+    <div id='portfolio' className='Portfolio'>
+      <div className='MiniContainer'>
         <div className='SectionTitle'>
-          {"<PORTFOLIO>"}
+          <h1 className='title-gradient'>
+            {"<Portfolio>"}
+          </h1>
         </div>
         <div className='PortfolioContainer'>
           Portfolio
         </div>
         <div className='SectionTitle'>
-          {"</PORTFOLIO>"}
+          <h1 className='title-gradient'>
+            {"</Portfolio>"}
+          </h1>
         </div>
       </div>
     </div>
