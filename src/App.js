@@ -8,6 +8,8 @@ import '@fontsource/roboto'
 import { useState } from 'react';
 
 
+
+
 function App() {
   const [currentComponent, setCurrentComponent] = useState('home');
 
@@ -23,7 +25,7 @@ function App() {
         {currentComponent === 'about' && <About />}
         {currentComponent === 'skills' && <Skills />}
         {currentComponent === 'portfolio' && <Portfolio />}
-        {currentComponent === 'contact' && <Contact />}
+        {currentComponent === 'contact' && <Contact/>}
 
       </div>
     </div>

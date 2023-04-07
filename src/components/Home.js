@@ -27,17 +27,17 @@ function Home() {
                             <div className='text-zone-left'>
                                 <div className="text-spike-left"></div>
                                 <div className='text-bubble-left'>
-                                    <h1>Hola Visitante!</h1>
-                                    <p>Te presento a Alan Aragon</p>
+                                    <h1>Hello dear Visitor!</h1>
+                                    <p>i will introduce you to Alan Aragon, a...</p>
                                     <section class="description-animation">
                                         <div class="first">
-                                            <div>Fanatico de la Informatica</div>
+                                            <div>Computer enthusiast </div>
                                         </div>
                                         <div class="second">
-                                            <div>Estudiante de Sistemas</div>
+                                            <div>Systems's student</div>
                                         </div>
                                         <div class="third">
-                                            <div>Programador Web</div>
+                                            <div>Web Programmer</div>
                                         </div>
 
                                     </section>
@@ -46,7 +46,7 @@ function Home() {
                             <div className='text-zone-right'>
                                 <div className="text-spike-right"></div>
                                 <div className='text-bubble-right'>
-                                    <h1>Excelente!</h1>
+                                    <h1>Wow, wonderful!</h1>
 
                                 </div>
 
