@@ -5,6 +5,9 @@ function Home() {
 
     return (
         <div id='home' className='Home'>
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
             <div className='MiniContainer'>
                 <div className='SectionTitle'>
                     <h1 className='title-gradient'>

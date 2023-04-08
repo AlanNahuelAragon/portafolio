@@ -8,9 +8,8 @@ import Swal from 'sweetalert2';
 function Contact() {
   const [divClass, setDivClass] = useState('rocket');
   const Swal = require('sweetalert2');
-  useEffect(()=>{
 
-  })
+  
   const sendEmail = (event) => {
     event.preventDefault();
     emailjs.sendForm('service_ov3awyk', 'template_a5jeuzu', event.target, 'ly1ZUO_-kRkRHnOVY')
@@ -36,7 +35,6 @@ function Contact() {
   return (
     <div id='contact' className='Contact'>
       <div id='stars1'></div>
-      <div id='stars2'></div>
       <div id='stars3'></div>
       <div className='MiniContainer'>
         <div className='SectionTitle'>

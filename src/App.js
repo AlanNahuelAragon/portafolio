@@ -22,7 +22,7 @@ function App() {
       <Sidebar handleClick={handleClick} />
       <div className='Container'>
         {currentComponent === 'home' && <Home />}
-        {currentComponent === 'about' && <About />}
+        {currentComponent === 'about' && <About handleClick={handleClick} />}
         {currentComponent === 'skills' && <Skills />}
         {currentComponent === 'portfolio' && <Portfolio />}
         {currentComponent === 'contact' && <Contact/>}

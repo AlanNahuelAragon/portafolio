@@ -19,7 +19,7 @@
   margin-top: 7vh;
   text-align: center;
   margin-bottom: 7vh;
-
+  background-image: url();
 }
 
 .title-gradient {
@@ -110,9 +110,15 @@ body {
 }
 
 .Home {
-  background-color: beige;
+  background-color: transparent;
   height: 100vh;
-
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+  animation: home-gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
 }
 
 .MiniBrowser {
@@ -273,36 +279,92 @@ body {
 }
 
 .AboutContainer {
-  margin-top: 5vh;
+
+  width: 100%;
+  height: 60%;
   display: block;
-  height: 55%;
-  margin-bottom: 11vh;
 }
-
-.card {
-
-  background-color: beige;
+.card-container{
   box-shadow: #242528;
   border-radius: 20px;
   margin-top: 5vh;
-  display: flex;
+  display: block;
+  height: 60%;
+  width: 80%;
+  margin-bottom: 11vh;
+  margin-left:10%;
+}
+.card {
+  padding-top: 130px;
   height: 100%;
   width: 100%;
-  margin-bottom: 11vh;
+  display: flex;
+  
 }
 
 .profile {
-  display: block;
   height: 100%;
+  width: 30%;
+  display: block;
+  background-color: rgb(255, 237, 214);
+  border-style: solid;
+  border-color: rgb(255, 237, 214);
+  border-radius: 10px 0px 0px 10px;
+}
+.profile-pic-container{
+  display: flex;
+  justify-content: center;
   width: 100%;
-  border-radius: 20px;
-  background-color: rgb(236, 236, 145);
+  height: 55%;
+}
+.profile-pic{
+  margin-top: 28px;
+  height: 160px;
+  width: 160px;
+
+}
+.profile-data-container{
+
+  width: 100%;
+  height: 45%;
+}
+.message-profile{
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-align: center;
+}
+.message-together{
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-align: center;
+}
+.message-together:hover{
+  cursor: pointer;
+  font-style: italic;
 }
 
 .presentation {
-
+  background-color: beige;
+  border-style: solid;
+  border-color: beige;
+  border-radius: 0px 10px 10px 0px;
   display: block;
   height: 100%;
+  width: 70%;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+}
+.message-separator{
+  height: 10;
+  text-align: center;
+}
+.message-about{
+  padding-top: 30px;
+  padding-left: 20%;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 30%;
+  width: 60%;
 }
 
 
@@ -372,9 +434,9 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: bisque;
+  background-color: beige;
   border-style: solid;
-  border-color: bisque;
+  border-color: beige;
   border-radius: 0 10px 0;
 }
 
@@ -423,7 +485,7 @@ textarea {
   letter-spacing: 1px;
   margin: 0em 0 1.875em 0;
   padding: 0 0 0.875em 0;
-  text-transform: uppercase;
+  resize: none;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -447,10 +509,10 @@ textarea:focus {
 .data-contact {
   width: 100%;
   height: 50%;
-  background-color: bisque;
+  background-color: beige;
   border-style: solid;
   border-radius: 0 20px 0px;
-  border-color: bisque;
+  border-color: beige;
   display: block;
   text-align: center;
 }
@@ -872,5 +934,19 @@ html {
 
   to {
     transform: translateY(0px);
+  }
+}
+
+/*WAVE*/
+
+@keyframes home-gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
   }
 }
