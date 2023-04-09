@@ -33,7 +33,7 @@ function About({handleClick}) {
                                 </div>
                             </div>
                             <div className='presentation'>
-                                <div className='message-work'>
+                                <div className='message-about'>
                                     <p>
                                         "Since my first project at Global Game Jam in 2019,
                                         I have followed my path as a programmer until now
