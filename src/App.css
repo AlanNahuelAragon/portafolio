@@ -394,7 +394,8 @@ body {
   margin-top: 0vh;
   display: block;
   height: 55%;
-  margin-bottom: 11vh;
+  margin-bottom: 0vh;
+  padding-bottom: 50px;
   box-shadow: 0 0 20px #000000;
 }
 
@@ -410,11 +411,17 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 2vh;
   font-weight: 700;
+  
 }
 
-.skill-buttons-container {
-  display: block;
+
+.SkillList{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: space-around;
 }
+
 
 
 .Portfolio {
@@ -614,19 +621,17 @@ textarea:focus {
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  display: inline-block;
-  flex-direction: row;
-  flex-shrink: 0;
+  display: inline-flex;
   font-family: Eina01, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 800;
-  justify-content: center;
-  line-height: 24px;
+  justify-content:  center;
+  line-height:24px;
   margin: 0;
   min-height: 64px;
   outline: none;
   overflow: visible;
-  padding: 19px 26px;
+  padding: 10px;
   pointer-events: auto;
   position: relative;
   text-align: center;
@@ -655,7 +660,6 @@ textarea:focus {
 .button-gradient:before {
   background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
   content: "";
-  display: block;
   height: 100%;
   left: 0;
   overflow: hidden;
@@ -670,7 +674,6 @@ textarea:focus {
   background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
   bottom: 4px;
   content: "";
-  display: block;
   left: 4px;
   overflow: hidden;
   position: absolute;
@@ -712,6 +715,16 @@ textarea:focus {
 .button-gradient:disabled {
   cursor: default;
   opacity: .24;
+}
+
+.button-gradient #skill-logo{
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+}
+
+.button-gradient #tittle{
+  padding: 5px;
 }
 
 /*Contact Button*/
